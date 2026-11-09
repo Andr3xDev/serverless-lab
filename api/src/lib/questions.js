@@ -153,7 +153,7 @@ const questions = [
       'Porque los forks no pueden ejecutar pruebas',
       'Porque el plan Free solo permite un repositorio'
     ],
-    answer: 9,
+    answer: 1,
     explanation:
       'Los workflows de forks no reciben los secretos del repositorio. Sin el token de despliegue no pueden publicar, y así se evita que cualquiera use ese token para subir contenido a tu aplicación.'
   }
