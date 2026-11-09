@@ -142,6 +142,20 @@ const questions = [
     answer: 1,
     explanation:
       'Static Web Apps crea un entorno de staging por Pull Request (el plan Free permite unos pocos simultáneos). Al cerrar el PR, el job "close" lo elimina.'
+  },
+  {
+    id: 'q11',
+    concept: 'Seguridad del despliegue',
+    text: '¿Por qué un Pull Request desde un fork no puede crear el entorno de preview?',
+    options: [
+      'Porque Static Web Apps no admite ramas de forks',
+      'Porque los secretos del repositorio, como el token de despliegue, no se comparten con los workflows de forks',
+      'Porque los forks no pueden ejecutar pruebas',
+      'Porque el plan Free solo permite un repositorio'
+    ],
+    answer: 1,
+    explanation:
+      'Los workflows de forks no reciben los secretos del repositorio. Sin el token de despliegue no pueden publicar, y así se evita que cualquiera use ese token para subir contenido a tu aplicación.'
   }
 ];
 
